@@ -113,7 +113,7 @@ body {
   opacity: 0.3;
 }
 
-@media only screen and (max-width: 415px) {
+@media only screen and (max-width: 750px) {
   body {
     margin: 4rem 0;
   }
@@ -160,5 +160,32 @@ body {
 
   .column {
     margin: 0.725rem;
+  }
+}
+@media only screen and (max-width: 1120px) {
+  .card-background {
+    width: 85%;
+  }
+
+  .dialog {
+    padding: 2rem;
+  }
+
+  .title {
+    padding-bottom: 1.75rem;
+
+    font-size: 2rem;
+  }
+
+  .paragraph {
+    font-size: 1rem;
+  }
+
+  .indicator-number {
+    font-size: 1.25rem;
+  }
+
+  .indicator-text {
+    font-size: 0.825rem;
   }
 }
