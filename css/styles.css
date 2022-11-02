@@ -98,11 +98,67 @@ body {
 
 .image-background {
   background-color: hsl(277, 64%, 61%);
+
+  border-top-right-radius: 0.725rem;
+  border-bottom-right-radius: 0.725rem;
 }
 
 .image {
   width: 100%;
   height: 100%;
 
+  border-top-right-radius: 0.725rem;
+  border-bottom-right-radius: 0.725rem;
+
   opacity: 0.3;
+}
+
+@media only screen and (max-width: 415px) {
+  body {
+    margin: 4rem 0;
+  }
+
+  .card-background {
+    flex-direction: column-reverse;
+
+    width: 85%;
+    height: auto;
+  }
+
+  .card-background > div {
+    width: 100%;
+  }
+
+  .dialog {
+    padding: 2.25rem;
+  }
+
+  .image-background,
+  .image {
+    border-top-left-radius: 0.725rem;
+    border-bottom-right-radius: 0;
+  }
+
+  .title,
+  .paragraph,
+  .indicator-number {
+    text-align: center;
+  }
+
+  .title {
+    padding-bottom: 1.5rem;
+  }
+
+  .paragraph {
+    padding-bottom: 1.75rem;
+  }
+
+  .row {
+    flex-direction: column;
+    width: auto;
+  }
+
+  .column {
+    margin: 0.725rem;
+  }
 }
